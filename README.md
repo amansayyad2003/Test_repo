@@ -1,2 +1,3 @@
 # Test_repo
-Repo for testing 
+- Repository for testing. 
+- It's just for testing how PR works.
