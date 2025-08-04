@@ -1,0 +1,17 @@
+name: Label issues
+on: 
+  issues:
+    types:
+      - reponed
+      - opened
+jobs:
+  label-issues:
+    run-on: ubuntu-latest
+    permissions: 
+      issues: write
+    steps:
+      - name: Lable issues
+        uses: andymckay/labeler@1.0.2
+        with: 
+          add-labels: "triage"
+          repo-token: ${{secrets.GITHUB_TOKEN}}
